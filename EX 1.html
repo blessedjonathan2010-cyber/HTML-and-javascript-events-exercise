@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
- 
+   <button id="btn">Click Me !</button>
+    <p id="text"></p>
+    <script>
+      const btn = document.getElementById("btn");
+      const text = document.getElementById("text");
+
+      let count = 0;
+
+      btn.addEventListener("click", function () {
+        count++;
+        text.innerHTML = "You have clicked" + count + "times";
+      });
+    </script>
 </body>
 </html>
